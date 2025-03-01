@@ -46,6 +46,7 @@
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
     <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
@@ -115,10 +116,10 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
       <ForcedIncludeFiles>$(SolutionDir)..\..\src\global.hpp</ForcedIncludeFiles>
-      <AdditionalIncludeDirectories>$(SolutionDir)..\..\deps\Catch2\include\external;$(SolutionDir)..\..\src\fileio\gzstream;$(SolutionDir)..\..\src\fileio\xml-parser;$(SolutionDir)..\..\src\fileio\resmgr;$(SolutionDir)..\..\src\dialogxml\widgets;$(SolutionDir)..\..\src\dialogxml\dialogs;$(SolutionDir)..\..\src\universe;$(SolutionDir)..\..\src\tools;$(SolutionDir)..\..\src\scenario;$(SolutionDir)..\..\src\universe;$(SolutionDir)..\..\src\fileio;$(SolutionDir)..\..\src\dialogxml;$(SolutionDir)..\..\src\gfx;$(SolutionDir)..\..\src;$(SolutionDir)..\..\rsrc\menus</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\..\deps\Catch2\include\external;$(SolutionDir)..\..\src\fileio\gzstream;$(SolutionDir)..\..\src\fileio\xml-parser;$(SolutionDir)..\..\src\fileio\resmgr;$(SolutionDir)..\..\src\dialogxml\widgets;$(SolutionDir)..\..\src\dialogxml\dialogs;$(SolutionDir)..\..\src\universe;$(SolutionDir)..\..\src\tools;$(SolutionDir)..\..\src\scenario;$(SolutionDir)..\..\src\fileio;$(SolutionDir)..\..\src\dialogxml;$(SolutionDir)..\..\src\gfx;$(SolutionDir)..\..\src;$(SolutionDir)..\..\rsrc\menus;C:\src\github.com\nater0000\SFML-2.6.2\include;C:\src\github.com\nater0000\boost_1_87_0</AdditionalIncludeDirectories>
       <ForcedIncludeFiles>$(SolutionDir)..\..\src\global.hpp</ForcedIncludeFiles>
       <WarningLevel>Level3</WarningLevel>
-      <PreprocessorDefinitions>MSBUILD_GITREV;WIN32;_WINDOWS;BOOST_CONFIG_SUPPRESS_OUTDATED_MESSAGE;TIXML_USE_TICPP;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>MSBUILD_GITREV;WIN32;_WINDOWS;BOOST_CONFIG_SUPPRESS_OUTDATED_MESSAGE;TIXML_USE_TICPP;SFML_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <OmitFramePointers>false</OmitFramePointers>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
       <PrecompiledHeaderFile />
@@ -129,17 +130,21 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <SubSystem>Windows</SubSystem>
       <EntryPointSymbol>mainCRTStartup</EntryPointSymbol>
+      <AdditionalLibraryDirectories>C:\src\github.com\nater0000\zlib-1.3.1\contrib\vstudio\vc17\x64\ZlibStatDebug;C:\Users\toren\AppData\Local\boost_1_87_0\lib64-msvc-14.3;C:\src\github.com\nater0000\SFML-2.6.2\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>winmm.lib;zlibstat.lib;sfml-system-s-d.lib;sfml-window-s-d.lib;sfml-graphics-s-d.lib;sfml-audio-s-d.lib;sfml-main-d.lib;opengl32.lib;freetype.lib;openal32.lib;flac.lib;ogg.lib;vorbis.lib;vorbisfile.lib;vorbisenc.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
       <ForcedIncludeFiles>$(SolutionDir)..\..\src\global.hpp</ForcedIncludeFiles>
-      <AdditionalIncludeDirectories>$(SolutionDir)..\..\deps\Catch2\include\external;$(SolutionDir)..\..\src\fileio\gzstream;$(SolutionDir)..\..\src\fileio\xml-parser;$(SolutionDir)..\..\src\fileio\resmgr;$(SolutionDir)..\..\src\dialogxml\widgets;$(SolutionDir)..\..\src\dialogxml\dialogs;$(SolutionDir)..\..\src\universe;$(SolutionDir)..\..\src\tools;$(SolutionDir)..\..\src\scenario;$(SolutionDir)..\..\src\universe;$(SolutionDir)..\..\src\fileio;$(SolutionDir)..\..\src\dialogxml;$(SolutionDir)..\..\src\gfx;$(SolutionDir)..\..\src;$(SolutionDir)..\..\rsrc\menus</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\..\deps\Catch2\include\external;$(SolutionDir)..\..\src\fileio\gzstream;$(SolutionDir)..\..\src\fileio\xml-parser;$(SolutionDir)..\..\src\fileio\resmgr;$(SolutionDir)..\..\src\dialogxml\widgets;$(SolutionDir)..\..\src\dialogxml\dialogs;$(SolutionDir)..\..\src\universe;$(SolutionDir)..\..\src\tools;$(SolutionDir)..\..\src\scenario;$(SolutionDir)..\..\src\fileio;$(SolutionDir)..\..\src\dialogxml;$(SolutionDir)..\..\src\gfx;$(SolutionDir)..\..\src;$(SolutionDir)..\..\rsrc\menus;C:\src\github.com\nater0000\SFML-2.6.2\include;C:\src\github.com\nater0000\boost_1_87_0</AdditionalIncludeDirectories>
       <ForcedIncludeFiles>$(SolutionDir)..\..\src\global.hpp</ForcedIncludeFiles>
       <OmitFramePointers>false</OmitFramePointers>
       <WarningLevel>Level3</WarningLevel>
-      <PreprocessorDefinitions>MSBUILD_GITREV;WIN32;_WINDOWS;BOOST_CONFIG_SUPPRESS_OUTDATED_MESSAGE;TIXML_USE_TICPP;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>MSBUILD_GITREV;WIN32;_WINDOWS;BOOST_CONFIG_SUPPRESS_OUTDATED_MESSAGE;TIXML_USE_TICPP;SFML_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
     </ClCompile>
     <Link>
       <TargetMachine>MachineX64</TargetMachine>
@@ -149,6 +154,8 @@
       <OptimizeReferences>true</OptimizeReferences>
       <EntryPointSymbol>mainCRTStartup</EntryPointSymbol>
       <LinkTimeCodeGeneration>UseFastLinkTimeCodeGeneration</LinkTimeCodeGeneration>
+      <AdditionalLibraryDirectories>C:\src\github.com\nater0000\zlib-1.3.1\contrib\vstudio\vc17\x64\ZlibStatRelease;C:\Users\toren\AppData\Local\boost_1_87_0\lib64-msvc-14.3;C:\src\github.com\nater0000\SFML-2.6.2\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>winmm.lib;zlibstat.lib;sfml-system-s.lib;sfml-window-s.lib;sfml-graphics-s.lib;sfml-audio-s.lib;opengl32.lib;freetype.lib;openal32.lib;flac.lib;ogg.lib;vorbis.lib;vorbisfile.lib;vorbisenc.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>

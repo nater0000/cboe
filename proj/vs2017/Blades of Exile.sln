@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.27130.2027
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35312.102
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Blades of Exile", "Blades of Exile.vcxproj", "{0D5452F7-8D4E-4406-8FD9-AEE0ED779189}"
 EndProject
@@ -12,6 +12,9 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Scenario Editor", "Scenario Editor\Scenario Editor.vcxproj", "{16A4B43F-956A-4B9D-9912-A77CBDDD0F4E}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Installer", "Installer\Installer.vcxproj", "{51EE3F8F-C1D2-4CE8-858C-EA06473F535E}"
+	ProjectSection(ProjectDependencies) = postProject
+		{540A4D47-DB2C-40E1-9E10-9F6425377022} = {540A4D47-DB2C-40E1-9E10-9F6425377022}
+	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Tests", "Tests\Tests.vcxproj", "{46525FDB-EB90-4ACA-9FFC-D305646C3E57}"
 EndProject
