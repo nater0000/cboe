@@ -12,7 +12,7 @@ extern cUniverse univ;
 std::shared_ptr<OpenBoEPCEditMenu> menu_ptr;
 
 void init_menubar() {
-	menu_ptr.reset(new OpenBoEPCEditMenu(mainPtr()));
+	menu_ptr.reset(new OpenBoEPCEditMenu(mainPtr));
 }
 
 void menu_activate() {

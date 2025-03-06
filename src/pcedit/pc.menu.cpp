@@ -4,7 +4,7 @@
 #include "pc.menus.hpp"
 
 OpenBoEPCEditMenu::OpenBoEPCEditMenu(sf::RenderWindow& window)
-	: mainPtr() { window }
+	: mainPtr { window }
 	, tgui    { window } {
 
 	// Build a menubar and store it in tgui with a known name
